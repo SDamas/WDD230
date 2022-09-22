@@ -41,8 +41,16 @@ main h3 {
 
 main span {
     display: block;
-    margin-bottom: 3rem;
     font-size: 1.1rem;
+}
+
+main a {
+    display: block;
+    margin-top: .5rem;
+}
+
+main img {
+    margin-top: 2rem;
 }
 
 main p {
