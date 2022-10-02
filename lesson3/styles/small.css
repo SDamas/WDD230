@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Inter&display=swap');
+
+:root {
+    --bg-color: #1D366F;
+    --action-color: #08C076;
+    --hammersmith-one: "Hammersmith One", "sans-serif";
+    --title-color: #1D366F;
+    --inter: "Inter", "sans-serif";
+    --text-size: 1.25rem;
+}
+
+/* Properties for titles and text */
+h1 {
+    font-family: var(--hammersmith-one);
+    color: var(--title-color);
+}
+
+p {
+    font-family: var(--inter);
+    font-size: var(--text-size);
+}
+/* */
+
+nav {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--hammersmith-one);
+    font-size: var(--text-size);
+    padding: 0 8rem;
+}
+
+#logo {
+    width: 8.438rem;
+    height: 2.75rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    padding: .75rem;
+}
+
+nav ul a:hover {
+    color: #08C076;
+    transition: .1s ease-out;
+}
+
+#purpose {
+    display: flex;
+    text-align: center;
+    margin-top: 6rem;
+    justify-content: center;
+}
+
+#purpose section {
+    width: 30em;
+    line-height: 2rem;
+}
+
+footer {
+    background-color: var(--bg-color);
+    height: 2.75rem;
+}
+
+/* Target Audience Page */
+
+#target-audience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: var(--inter);
+    margin-top: 6rem;
+}
+
+#target-audience p {
+    width: 40rem;
+    line-height: 2rem;
+}
+
+#target-audience ol {
+    text-align: left;
+    font-size: var(--text-size);
+}
+
+#personas {
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Color Scheme / Typography Page */
+
+#color-scheme-and-typography {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+#personas img {
+    width: 50rem;
+}
