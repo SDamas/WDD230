@@ -24,11 +24,13 @@ p {
 nav {
     background-color: var(--bg-color);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-family: var(--hammersmith-one);
     font-size: var(--text-size);
     padding: 0 8rem;
+    padding-top: 2rem;
 }
 
 #logo {
@@ -39,6 +41,9 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: -3rem;
     gap: 1rem;
 }
 
@@ -111,5 +116,5 @@ footer {
 }
 
 #personas img {
-    width: 50rem;
+    min-width: 50rem;
 }

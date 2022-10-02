@@ -1,0 +1,11 @@
+@media only screen and (min-width: 1020px) {
+    nav {
+        flex-direction: row;
+        padding-top: 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+        margin-left: 0;
+    }
+}
