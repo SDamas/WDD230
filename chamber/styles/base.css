@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Inter&display=swap');
+
+:root {
+    --bg-color: #1D366F;
+    --action-color: #08C076;
+    --hammersmith-one-font: "Hammersmith One", sans-serif;
+    --inter-font: "Inter", sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: var(--bg-color);
+    padding: 1rem;
+    height: 8rem;
+}
+
+header #logo {
+    width: 130px;
+    position: absolute;
+    top: 2.1rem;
+    left: 5rem;
+}
+
+header #navigation {
+    font-family: var(--hammersmith-one-font);
+    font-size: 1.125rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5rem;
+}
+
+header #pageNavigation {
+    list-style: none;
+    display: none;
+    gap: 1rem;
+}
+
+header #pageNavigation li a {
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+}
+
+header #pageNavigation li a:hover {
+    color: var(--action-color);
+    transition: .2s ease-out;
+}
+
+header #socialNavigation {
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+header #socialNavigation .socialIcon {
+    width: 2.2rem;
+}
+
+header #hamburgerMenu {
+    margin-top: -.3rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    height: 46px;
+    display: block
+}
+
+#pageNavigation.open {
+    display: block;
+}
+
+header #currentDate {
+    text-align: center;
+    padding: 1rem;
+    background-color: #162c61;
+    border-radius: 8px 12px 0px 0px;
+    margin: auto;
+    font-family: var(--hammersmith-one-font);
+    color: white;
+    position: relative;
+    top: 1rem;
+}
+/* HEADER END */
+
+/* MAIN */
+
+#mainSections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 350px);
+    gap: .5rem;
+    font-family: var(--hammersmith-one-font);
+    color: #1D366F;
+    padding: 2rem;
+}
+
+#mainSections .mainSection {
+    background-color: rgb(185, 185, 185);
+    padding: 1rem;
+}
+
+#mainSections #heroSection {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+#mainSections #eventSection {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+#mainSections #weatherSection {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+#mainSections #newsSection {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+#mainSections #spotlightsSection {
+    grid-column: 1 / 3;
+    grid-row: 5 / 7;
+}
+
+#mainSections #joinSection {
+    display: none;
+}
+/* MAIN END */
+
+/* FOOTER */
+
+footer {
+    background-color: #04153d;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+footer #mainFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    font-family: var(--inter-font);
+    color: white;
+    gap: 2rem;
+}
+
+footer #mainFooter #logo {
+    width: 130px;
+}
+
+footer #baseFooter {
+    text-align: center;
+    color: rgb(173, 173, 173);
+    font-family: var(--inter-font);
+    margin-top: 3rem;
+}
+
+footer #mainFooter #contactInformation {
+    text-align: center;
+}
+
+footer #mainFooter #contactInformation :nth-child(2) {
+    margin-top: 1.5rem;
+}
