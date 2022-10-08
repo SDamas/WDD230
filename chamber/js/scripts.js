@@ -1,5 +1,7 @@
 function toggleMenu() {
+    document.querySelector("#navigation").classList.toggle("open")
     document.querySelector("#pageNavigation").classList.toggle("open")
+    document.querySelector("#socialNavigation").classList.toggle("open")
 }
 
 document.querySelector("#hamburgerMenu").addEventListener("click", toggleMenu)

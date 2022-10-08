@@ -11,7 +11,6 @@
 header {
     background-color: var(--bg-color);
     padding: 1rem;
-    height: 8rem;
 }
 
 header #logo {
@@ -69,8 +68,14 @@ header #hamburgerMenu {
     display: block
 }
 
-#pageNavigation.open {
-    display: block;
+header #navigation.open {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+header #pageNavigation.open {
+    display: flex;
+    margin-top: 1rem;
 }
 
 header #currentDate {
