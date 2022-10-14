@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chamber of Commerce Website Project, WDD230 Class at BYU-Idaho, Samad Damas.">
+    <!-- Import google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <!-- Favicon, normalize css and local css -->
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <!-- Javascript -->
     <script src="js/scripts.js" defer></script>
     <title>Campinas Chamber</title>
 </head>
 <body>
     <!-- HEADER -->
     <header>
+        <div id="banner"></div>
         <nav id="navigation">
-            <img id="logo" src="images/logo.png" alt="Campinas Chamber logo">
+            <a href="/"><img id="logo" src="images/logo.png" alt="Campinas Chamber logo"></a>
             <ul id="pageNavigation">
                 <li><a href="/">Page 1</a></li>
                 <li><a href="/">Page 2</a></li>
@@ -33,15 +41,62 @@
     </header>
     <!-- MAIN -->
     <main id="mainSections">
-       <section class="mainSection" id="heroSection">Hero with site name and call to action</section>
-       <section class="mainSection" id="eventSection">Event</section>
-       <section class="mainSection" id="weatherSection">Weather</section>
-       <section class="mainSection" id="joinSection">Join</section>
-       <section class="mainSection" id="newsSection">News Release</section>
+       <section class="mainSection" id="heroSection">
+            <h2>Welcome to Campinas Chamber</h2>
+            <picture>
+                <img src="images/hero_image.jpg" alt="group of businesspeople gathered in a meeting, hearing the speakers that are in a white, elevated circle platform, sitted on chairs in the middle of them.">
+            </picture>
+            <button class="joinUsButton">Join the Chamber</button>
+       </section>
+       <section class="mainSection" id="eventSection">
+            <h2>Next Event</h2>
+            <h4>Marketing Strategies and Networking Opportunities</h4>
+            <p>Join us as we explore the relationship between businesses and art institutions / organizations promoting Campinas' Chamber in New York City.</p>
+            <p>Thursday at 11:00am.</p>
+       </section>
+       <section class="mainSection" id="weatherSection">
+            <h2>Weather</h2>
+            <div id="climate">
+                <img src="/" alt="image representating the current climate">
+                <span id="temperature">33ºC</span>
+            </div>
+            <div id="climateInformation">
+                <h4 id="climateCondition">Partly Cloudy</h4>
+                <hr>
+                <div>Wind Speed: <span id="windSpeed">2.5km/h</span></div>
+                <div>Wind Chill: <span id="windChill">N/A</span></div>
+            </div>
+       </section>
+       <section class="mainSection" id="joinSection">
+            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+            <button class="joinUsButton">Join Us!</button>
+       </section>
+       <section class="mainSection" id="newsSection">
+            <h2>News Release</h2>
+            <p>Mayor John Doe has announced a governmental assembly to discuss Campinas' entrepreneurship situation. Save the date to participate: Saturday 15:00pm.</p>
+       </section>
        <section class="mainSection" id="spotlightsSection">
-            <div id="spotlight1">Spotlight 1</div>
-            <div id="spotlight2">Spotlight 2</div>
-            <div id="spotlight3">Spotlight 3</div>
+            <div class="spotlight" id="spotlight1">
+                <h2>Spotlight 1</h2>
+                <img src="/" alt="">
+                <hr>
+                <div>email@contact.com</div>
+                <div>10 98765-4321 | <a href="/">website</a></div>
+            </div>
+            <div class="spotlight" id="spotlight2">
+                <h2>Spotlight 2</h2>
+                <img src="/" alt="">
+                <hr>
+                <div>email@contact.com</div>
+                <div>10 98765-4321 | <a href="/">website</a></div>
+            </div>
+            <div class="spotlight" id="spotlight3">
+                <h2>Spotlight 3</h2>
+                <img src="/" alt="">
+                <hr>
+                <div>email@contact.com</div>
+                <div>10 98765-4321 | <a href="/">website</a></div>
+            </div>
        </section> 
     </main>
     <!-- FOOTER -->
