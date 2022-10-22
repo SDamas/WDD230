@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <!-- Javascript -->
     <script src="js/scripts.js" defer></script>
+    <script src="js/windchill.js" defer></script>
     <title>Campinas Chamber</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
     <header>
         <div id="banner"></div>
         <nav id="navigation">
-            <a href="/"><img id="logo" src="images/logo.png" alt="Campinas Chamber logo"></a>
+            <a href="/"><img id="logo" src="images/logo.webp" alt="Campinas Chamber logo"></a>
             <ul id="pageNavigation">
                 <li><a href="/">Page 1</a></li>
                 <li><a href="/">Page 2</a></li>
@@ -44,7 +45,10 @@
        <section class="mainSection" id="heroSection">
             <h2>Welcome to Campinas Chamber</h2>
             <picture>
-                <img src="images/hero_image.jpg" alt="group of businesspeople gathered in a meeting, hearing the speakers that are in a white, elevated circle platform, sitted on chairs in the middle of them.">
+                <source srcset="images/hero_image_medium.jpg" media="(min-width: 600px) and (max-width: 63.9rem)">
+                <source srcset="images/hero_image_large.jpg" media="(min-width: 64rem)">
+
+                <img src="images/hero_image_small.jpg" alt="group of businesspeople gathered in a meeting, hearing the speakers that are in a white, elevated circle platform, sitted on chairs in the middle of them.">
             </picture>
             <button class="joinUsButton">Join the Chamber</button>
        </section>
@@ -58,13 +62,13 @@
             <h2>Weather</h2>
             <div id="climate">
                 <img src="/" alt="image representating the current climate">
-                <span id="temperature">33ºC</span>
+                <span id="temperature">33</span>ºF
             </div>
             <div id="climateInformation">
                 <h4 id="climateCondition">Partly Cloudy</h4>
                 <hr>
-                <div>Wind Speed: <span id="windSpeed">2.5km/h</span></div>
-                <div>Wind Chill: <span id="windChill">N/A</span></div>
+                <div>Wind Speed: <span id="windSpeed">3.4</span>mph</div>
+                <div>Wind Chill: <span id="windChill"></span>ºF</div>
             </div>
        </section>
        <section class="mainSection" id="joinSection">
@@ -102,7 +106,7 @@
     <!-- FOOTER -->
     <footer>
         <section id="mainFooter">
-            <img id="logo" src="images/logo.png" alt="Campinas Chamber logo">
+            <img id="logo" src="images/logo.webp" alt="Campinas Chamber logo">
             <div id="contactInformation">
                 <div id="contact">R. Jacy Teixeira de Camargo, 940 - Jardim do Lago, Campinas - SP, 13050-913</div>
                 <div id="map">📌 Location Map</div>
