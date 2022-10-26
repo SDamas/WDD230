@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    place-items: center;
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+    width: 100%;
+    filter: blue(0em);
+    transition: filter .5s;
+}
