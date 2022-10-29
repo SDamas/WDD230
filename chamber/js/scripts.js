@@ -53,3 +53,4 @@ document.querySelector("#year").textContent = year
 //Add last modified to footer
 const lastModified = document.lastModified
 document.querySelector("#lastModified").textContent = lastModified
+
