@@ -46,8 +46,17 @@
         grid-row: 4 / 5;
     }
 
-    /* Discover Page */ 
+    /* Discover page */ 
     #cultural-places img {
         pointer-events: all;
+    }
+
+    /* Join page */
+    #join #form-fields {
+        display: flex;
+    }
+
+    #join fieldset {
+        margin: 1.5rem 0rem 1.5rem 2rem;
     }
 }
