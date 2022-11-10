@@ -1,0 +1,75 @@
+{"companies": [
+    {
+      "name": "State Grid",
+      "adress": "Rua Gomes de Carvalho, 1510",
+      "phone": "11 3016-0400",
+      "website": "https://stategrid.com.br",
+      "logo": "./images/card-logo/stategrid.png",
+      "membershiplevel": "Gold"
+    },
+    {
+      "name": "Organon Farmaceutica",
+      "adress": "Av. Dr. Chucri Zaidan No. 296",
+      "phone": "+0800 000 0149",
+      "website": "https://www.organon.com/brazil/",
+      "logo": "./images/card-logo/organon.svg",
+      "membershiplevel": "Gold"
+    },
+    {
+      "name": "Pirelli Pneus",
+      "adress": "Avenida das Amoreiras 1813",
+      "phone": "19 5471-3100",
+      "website": "https://www.pirelli.com/tyres/pt-br/carro/homepage",
+      "logo": "./images/card-logo/pirelli.png",
+      "membershiplevel": "Silver"
+    },
+    {
+      "name": "Westrock",
+      "adress": "Avenida Carlos Grimaldi, 1701",
+      "phone": "19 4873-5847",
+      "website": "https://www.westrock.com/company/regions/brazil",
+      "logo": "./images/card-logo/westrock.svg",
+      "membershiplevel": "Silver"
+    },
+    {
+      "name": "Banco Agibank",
+      "adress": "Rua Sergio Fernandes, 1000",
+      "phone": "3004 2221",
+      "website": "https://agi.com.br/",
+      "logo": "./images/card-logo/agibank.png",
+      "membershiplevel": "Bronze"
+    },
+    {
+      "name": "3Z Realty",
+      "adress": "Avenida Jose de Souza, 735",
+      "phone": "19 95873-6721",
+      "website": "https://www.3zrealty.com.br/",
+      "logo": "./images/card-logo/3zrealty.png",
+      "membershiplevel": "Bronze"
+    },
+    {
+      "name": "Alliance Trucks",
+      "adress": "Avenida Mercedes, 679",
+      "phone": "19 96728-7563",
+      "website": "https://alliancetruckparts.com.br/",
+      "logo": "./images/card-logo/alliance-trucks.jpg",
+      "membershiplevel": "Gold"
+    },
+    {
+      "name": "Capgemini",
+      "adress": "Avenida John Dalton, 371",
+      "phone": "19 7364-3817",
+      "website": "https://www.capgemini.com/br-pt/",
+      "logo": "./images/card-logo/capgemini.svg",
+      "membershiplevel": "Gold"
+    },
+    {
+      "name": "Kerry",
+      "adress": "Avenida Merces, 460",
+      "phone": "19 4598-5500",
+      "website": "https://www.kerry.com/br-pt",
+      "logo": "./images/card-logo/kerry.png",
+      "membershiplevel": "Silver"
+    }
+  ]
+}
