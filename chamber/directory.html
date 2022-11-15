@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <!-- Javascript -->
-    <script src="js/directory.js"></script>
+    <script src="js/directory.js" defer></script>
     <title>Join Campinas Chamber</title>
 </head>
 <body>
@@ -27,7 +27,7 @@
             <a href="/"><img id="logo" src="images/logo.webp" alt="Campinas Chamber logo"></a>
             <ul id="pageNavigation">
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="/">Page 2</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="/">Page 3</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
@@ -39,8 +39,13 @@
         </nav>
     </header>
 
-    <main>
-        <div class="cards"></div>
+    <main id="directory-main">
+        <div id="displays"><picture id="grid"><img class="display-type" src="images/grid.png" alt="Grid display image"></picture><picture id="list"><img class="display-type" src="images/list.png" alt="List display image"></picture></div>
+        <div class="display grid"></div>
+        <div id="attribution">
+            <a href="https://www.flaticon.com/free-icons/list" title="list icons">List icons created by Kirill Kazachek - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Kiranshastry - Flaticon</a>
+        </div>
     </main>
 
     <!-- FOOTER -->
@@ -54,6 +59,9 @@
         </section>
         <section id="baseFooter">
             &copy;<span id="year"></span> Campinas Chamber | Samad Damas | WDD 230 Project | Last Modification: <span id="lastModified"></span>
+        </section>
+        <section id="attribution">
+            
         </section>
     </footer>
 </body>

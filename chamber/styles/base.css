@@ -439,10 +439,44 @@ footer #mainFooter #contactInformation :nth-child(2) {
     text-align: center;
 }
 
-/*********************  DISCOVERY PAGE  *********************/
+/*********************  DIRECTORY PAGE  *********************/
 
-.cards {
-    margin: 4rem;
+#directory-main {
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+}
+
+#displays {
+    width: 100%;
+    text-align: center;
+}
+
+#displays picture {
+    margin: 0 .5rem;
+    height: 15rem;
+}
+
+.display-type {
+    margin-top: 3rem;
+    max-width: 2%;
+    border: 1px solid #1D366F;
+    padding: .7rem;
+    border-radius: 4px;
+}
+
+#displays picture.active .display-type {
+    background-color: whitesmoke;
+}
+
+.display-type:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+/*** Grid display ***/
+.display.grid {
+    margin: 1.6rem 4rem 5rem;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
     gap: 1rem;
@@ -463,4 +497,36 @@ footer #mainFooter #contactInformation :nth-child(2) {
 
 .card img {
     width: 50%;
+}
+
+/*** List display ***/
+.display.list {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 1.6rem 4rem 5rem;
+}
+
+.display.list .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    justify-content: flex-start;
+    border: 1px solid #1D366F;
+}
+
+.display.list .card img {
+    display: none;
+}
+
+#attribution {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#attribution a {
+    color: gray;
 }
