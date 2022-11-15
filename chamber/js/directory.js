@@ -1,4 +1,4 @@
-fetch('chamber/json/data.json')
+fetch('json/data.json')
   .then((response) => response.json())
   .then((jsonObject) => {
     const companies = jsonObject['companies'];
