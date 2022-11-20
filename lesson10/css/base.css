@@ -1,0 +1,39 @@
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+#app {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 1px 4px 7px 1px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease-out;
+}
+
+#app:hover {
+    transform: translateY(-10px);
+    box-shadow: 1px 4px 7px 1px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+}
+
+#current-temp {
+    display: block;
+    font-size: 3rem;
+    color: white;
+    padding: 1rem;
+    background: #0066ff;
+    width: 20%;
+    border-radius: 8px;
+    margin: 3rem auto;
+    transition: .2s ease-out;
+}
+
+#current-temp:hover {
+    box-shadow: 1px 1px 10px .6px #0066ff;
+}
