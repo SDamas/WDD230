@@ -26,7 +26,7 @@ async function apiFetch() {
         }
     } catch (error) {
         console.log(error);
-    }
+    };
 };
 
 apiFetch();
