@@ -109,7 +109,6 @@ async function getSilverAndGoldCompanies() {
     Returns silver and gold companies.
     */
     const request = await fetch(companiesData);
-    console.log(request)
 
     if (request.ok) {
       const response = await request.json();
