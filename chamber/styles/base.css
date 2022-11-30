@@ -15,9 +15,13 @@
     font-weight: bold;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* End of global classes */
 
-h2 {
+h2, label {
     color: #1D366F;
     font-family: var(--hammersmith-one-font);
 }
@@ -228,7 +232,7 @@ header #currentDate {
 }
 
 #mainSections #spotlightsSection .spotlight img {
-    width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
@@ -241,7 +245,6 @@ header #currentDate {
 
 footer {
     background-color: #04153d;
-    height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -529,4 +532,66 @@ footer #mainFooter #contactInformation :nth-child(2) {
 
 #attribution a {
     color: gray;
+}
+
+/*********************  CONTACT PAGE  *********************/
+
+#contact-main {
+    margin-top: 6rem;
+    margin-left: 5rem;
+    margin-bottom: 8rem;
+}
+
+#contact-content h2 {
+    margin-bottom: 2rem;
+}
+
+#contact-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+    width: 20rem;
+}
+
+#contact-content form h2 {
+    margin-bottom: 1rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-input label {
+    color: #1D366F;
+    font-size: 1.25rem;
+}
+
+.form-input input {
+    height: 44px;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+input[placeholder] {
+    font-family: var(--hammersmith-one-font);
+    font-size: .92rem;
+}
+
+#contact-content form button {
+    height: 44px;
+    background-color: #1D366F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--hammersmith-one-font);
+    transition: .2s linear;
+}
+
+#contact-content form button:hover {
+    background-color: var(--action-color);
+    cursor: pointer;
 }

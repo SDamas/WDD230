@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <!-- Javascript -->
-    <script src="js/directory.js" defer></script>
     <title>Join Campinas Chamber</title>
 </head>
 <body>
@@ -40,12 +38,30 @@
         </nav>
     </header>
 
-    <main id="directory-main">
-        <div id="displays"><picture id="grid"><img class="display-type" src="images/grid.png" alt="Grid display image"></picture><picture id="list"><img class="display-type" src="images/list.png" alt="List display image"></picture></div>
-        <div class="display grid"></div>
-        <div id="attribution">
-            <a href="https://www.flaticon.com/free-icons/list" title="list icons">List icons created by Kirill Kazachek - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Kiranshastry - Flaticon</a>
+    <main id="contact-main">
+        <div id="contact-content">
+            <h2>Let's get in touch ;)</h2>
+            <p>Campinas Chamber is available for contact from 8am - 6pm, office hours.</p>
+            <p>You can call us at (11) 91234-5678, or send us an e-mail at <a href="mailto:campinaschamber@gmail.com">campinaschamber@gmail.com</a></p>
+            <p>We're waiting to hear from you soon!</p>
+
+            <form>
+                <h2>Send us a message</h2>
+                <div class="form-input">
+                    <label for="name">Full name</label>
+                    <input type="text" name="name" placeholder="John Doe">
+                </div>
+                <div class="form-input">
+                    <label for="name">E-mail</label>
+                    <input type="email" name="email" placeholder="johndoe@gmail.com">
+                </div>
+                <div class="form-input">
+                    <label for="phone">Phone</label>
+                    <input type="char" name="phone" placeholder="(12) 91234-5678">
+                </div>
+
+                <button type="submit">Send my message</button>
+            </form>
         </div>
     </main>
 
@@ -60,9 +76,6 @@
         </section>
         <section id="baseFooter">
             &copy;<span id="year"></span> Campinas Chamber | Samad Damas | WDD 230 Project | Last Modification: <span id="lastModified"></span>
-        </section>
-        <section id="attribution">
-            
         </section>
     </footer>
 </body>
